@@ -1,0 +1,126 @@
+Il seguente file di testo mostra in termini generali il funzionamento di trascrizione delle informazioni
+relative allo svolgimento di una partita.
+Tutte le fasi e le azioni qui svolte sono spiegate nella documentazione d'uso dell'applicativo.
+In caso di problemi si faccia riferimento ad essa. 
+
+Alla creazione di una partita verra' generato il file contenente le seguenti informazioni:
+	- Nome Della partita
+	- Data di creazione
+	- Identificativo/Numero della partita
+	- Elenco dei giocatori con il loro nickname e colore scelto
+
+Un possibile esempio:
+
+-- Inizio --
+Partita 'PartitaDiTest' creata in data 2017-01-18. ID identificativo della partita e': (2).
+Elenco dei giocatori presenti in partita:
+Nickname giocatore [1]: Lupin. Colore scelto: Rosso
+Nickname giocatore [2]: Jigen. Colore scelto: Nero
+Nickname giocatore [3]: Goemon. Colore scelto: Giallo
+Nickname giocatore [4]: Zenigata. Colore scelto: Verde
+-- Fine --
+
+Si passa alla fase preliminare dove nel file vengono trascritte le seguenti infomazioni:
+	- Numero del turno in corso
+	- Giocatore a cui tocca svolgere l'inserimento delle armate
+	- Territorio/i e armate su cui vengono effettuati i posizionamenti
+
+Un possibile esempio:
+
+-- Inizio --
+INIZIO FASE PRELIMINARE!
+Turno n°1
+Il giocatore Jigen posiziona 1 armate sul territorio Nuova Guinea
+Successivamente posiziona 2 armate sul territorio America Centrale
+
+Turno n°2
+Il giocatore Goemon posiziona 3 armate sul territorio Africa Del Nord
+
+Turno n°3
+Il giocatore Zenigata posiziona 1 armate sul territorio Stati Uniti Orientali
+Successivamente posiziona 2 armate sul territorio Australia Occidentale
+
+Turno n°4
+Il giocatore Lupin posiziona 1 armate sul territorio Africa Del Sud
+Successivamente posiziona 1 armate sul territorio Jacuzia
+Successivamente posiziona 1 armate sul territorio Peru'
+-- Fine --
+
+Terminata la fase preliminare si entra nel ciclo delle tre fasi: posizionamento, combattimento e spostamento.
+La prima e' il posizionamento.
+
+Le informazioni trascritte nel file comprendono:
+	- Numero del turno in corso
+	- Giocatore a cui tocca posizionare le armate
+	- Territorio/i e armate su cui vengono effettuati i posizionamenti
+
+Un possibile esempio:
+
+-- Inizio --
+PRIMA FASE: POSIZIONAMENTO
+Tuno n° 30. Giocatore:Goemon
+Vengono inserite 1 sul territorio Argentina
+Vengono inserite 3 sul territorio Afghanistan
+-- Fine --
+
+Si passa alla fase di combattimento. Le informazioni scritte comprendono:
+	- Numero del turno in corso
+	- Giocatore a cui tocca effettuare un eventuale combattimento
+	- Territorio d'attacco e territorio che si difense con il rispettivo giocatore
+	- Numero di dadi lanciati
+	- Esito del combattimento con il numero di armate perse dai giocatori
+	- Conquista o meno del territorio attaccato
+
+Un possibile esempio:
+
+-- Inizio -- 
+SECONDA FASE: COMBATTIMENTO
+Tuno n° 30. Giocatore:Goemon
+Si prepara un attacco dal territorio Cina al territorio Siberia del giocatore Jigen
+Il giocatore attaccante lancia 2 dadi.
+Il giocatore difensore risponde lanciando 1 dado.
+
+Esito del combattimento:
+Il giocatore attaccante ha perso(1) armate. Il giocatore difensore ha perso (0) armate
+Il giocatore attaccante lancia 2 dadi.
+Il giocatore difensore risponde lanciando 1 dado.
+
+Esito del combattimento:
+Il giocatore attaccante ha perso(0) armate. Il giocatore difensore ha perso (1) armate
+Il giocatore attaccante lancia 2 dadi.
+Il giocatore difensore risponde lanciando 1 dado.
+
+Esito del combattimento:
+Il giocatore attaccante ha perso(0) armate. Il giocatore difensore ha perso (1) armate
+Il giocatore attaccanrte ha conquistato il territorio Siberia
+
+Combattimenti terminati.
+-- Fine --
+
+Ultima fase, spostamento. Le informazioni comprendono:
+	- Numero del turno in corso
+	- Giocatore a cui tocca eventualmente spostare le armate
+	- Territorio di partenza, d'arrivo e numero di armate spostate
+
+Un possibile esempio:
+
+-- Inizio --
+TERZA FASE: SPOSTAMENTO
+Tuno n° 30. Giocatore:Goemon
+Il giocatore ha spostato 2 armate dal territorio Africa Del Nord al territorio Europa Occidentale.
+Turno concluso!
+-- Fine -- 
+
+Vengono trascritti nel file anche informazioni come:
+	- Partita sospesa/ripresa
+	- Un giocatore decide di non effettuare combattimenti
+	- Un giocatore decide di non effettuare spostamenti
+	- Un giocatore viene proclemato vincitore
+	- Un giocatore perde 
+
+Per ulteriori informazioni sulla creazione e la gestione dei file log si rimanda alla guida d'uso dell'applicativo.
+
+
+
+
+

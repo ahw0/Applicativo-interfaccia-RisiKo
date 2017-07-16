@@ -1,538 +1,540 @@
-# Applicativo interfaccia RisiKo
+# RisiKo application interface
 
 
-## Argomenti trattati
+## Topics covered
 
-1. Uso dell’applicativo
-  * Schermata di login e personalizzazione
-  * Schermata principale
-  * Le sezioni presenti
-  	* Nuova partita
-    * Riprendi partita
+1. Using application
+  * Login and customization screen
+  * Main screen
+  * Sections
+  	* New match
+    * Resume play
     * Tools
     * Download
-2. Giocare una partita
-  * Fase preliminare
-  * Fase di posizionamento
-  * Fase di combattimento
-  * Fase di spostamento
-3. Otteniamo qualche informazione
-  * Ripercorrere una partita
-  * Gestione del file log.
-4. Altre informazioni reperibili
-  * Giocatore
-  * Turni
-  * Generali
+2. Play a game
+  * Preliminary phase
+  * Positioning phase
+  * Combat phase
+  * Moving phase
+3. Get some information
+  * Retracing a game
+  * Managing Log file
+4. Other information available
+  * Player
+  * Turn
+  * Generals
 
 ___
 
-## Autori
+## Authors
 
-:it: : Simone Margio
+:it: Simone Margio
 
 
-# Guida d’uso dell’applicativo
+# Application Guide
 
-## Schermata di login e personalizzazione
+## Login and customization screen
 
 ![1](https://user-images.githubusercontent.com/22590804/27735543-73171ef2-5da0-11e7-86fd-3bf5d1f24b31.jpg)
 
-All’avvio dell’applicativo viene mostrato il menù di login presente in figura, tramite il quale è possibile svolgere le seguenti azioni:
+When the application starts, the login menu is displayed, through which you can perform the following actions:
 
-- **[ Login ]**: effettuare l’accesso inserendo l’username e password relativi al database che si vuole utilizzare.
-- **[ Opzioni ]**: specificare i parametri d’accesso al database.
-- **[ Esci ]**: uscire dall’applicativo.
+- **[ Login ]**: login with username and password for database that you want to use.
+- **[ Opzioni ]**: specify database access parameters.
+- **[ Esci ]**: exit application.
 
-Premendo sul relativo bottone **[ Opzioni ]** si accede alla seguente schermata:
+Pressing button **[Opzioni]** the following screen will appear:
 
 ![2](https://user-images.githubusercontent.com/22590804/27739625-8cf4ec28-5daf-11e7-9591-8a13ddd2c175.jpg)
 
-Da qui è possibile effettuare opportune modifiche per l’accesso al database. Tra queste sono comprese la personalizzazione di: 
+From here you can make appropriate changes to access the database. Among these are the customization of:
 
 -	**Host**
 -	**Servizio** 
 -	**Porta** 
 
-Una volta modificate le informazioni presenti si può procedere premendo il relativo pulsante **[ Applica ]** per renderle effettive. 
-Caso in cui si vogliono ripristinare i parametri d’accesso di default bisognerà premere il pulsante **[ Ripristina predefiniti ]**.  
+Once you change the information, you can proceed by pressing the appropriate button **[ Applica ]** to make it effective.
+The case where you want to restore the default access parameters will have to press the **[ Ripristina predefiniti ]**.
 
-I parametri predefiniti sono, inoltre, scritti e mostrati in automatico ad ogni apertura della schermata. 
-Finite le personalizzazioni l’utente verrà notificato mediante un pop-up contenente tutti i parametri da lui modificati. 
+The default parameters are also written and displayed automatically at each opening of the screen.
+When you finish the customizations, the user will be notified by means of a pop-up containing all the parameters he has edited.
 
-:star: **Feature**: Ogni campo relativo alla personalizzazione d’accesso al database ha opportuni controlli per evitare di inserire stringhe notevolmente lunghe oppure caratteri in campi dove si richiedono solo numeri. 
+:star: **Feature**: Each database access customization field has appropriate controls to avoid entering long strings or characters in fields where only numbers are required.
 
-Una volta ritornati al menù d’accesso si può procedere al login.  L’accesso mediante la correttezza delle credenziali porta l’utente alla schermata principale dell’applicativo (figura sotto), caso opposto verrà notificato un problema d’accesso. 
+You can go back to the login menu. Access by right credentials leads the user to the application's main screen (below), opposite case will be notified of a login problem.
 
-## Schermata di login e personalizzazione
+## Main screen
 
 ![3](https://user-images.githubusercontent.com/22590804/27739651-a89b7f50-5daf-11e7-80aa-105c156555cf.jpg)
 
-La schermata principale è il cuore del programma dove l’utente può svolgere tutte le azioni che permettono la gestione di una partita di RisiKo. 
- 
-Le funzionalità comprendono: 
--	**[ Nuova Partita ]**: creazione di una nuova partita per poter giocare a RisiKo. 
--	**[ Riprendi Partita ]**: riprendere una partita lasciata in sospeso. 
--	**[ Tools ]**: ripercorrere lo svolgimento di una partita e ottenere informazioni aggiuntive sui giocatori o un determinato turno di gioco. 
--	**[ Download ]**: offre la possibilità di scaricare i file contenente il database per poter usufruire dell’applicativo e un popolamento di test. 
--	**[ Esci ]**: uscire dall’applicazione. 
- 
-L’utente può selezionare premendo sul pulsante apposito per accedere ad una della modalità presenti e alle relative funzionalità. 
+The main screen is the heart of the program where the user can perform all the actions that allow the management of a RisiKo game.
 
-## Le sezioni presenti 
-### Nuova Partita
+Features include:
+- **[ Nuova Partita ]**: Creating a new game to play RisiKo.
+- **[ Riprendi Partita ]**: Resume a left pending game.
+- **[Tools]**: retrace a game and get additional information about players or a turn of play.
+- **[Download]**: offers the ability to download files containing the database to be able to use the application and a test population. [Fix with the appropriate connections]
+- **[ Esci ]**: Exit the application.
+
+The user can select by pressing the appropriate button to access one of the present mode and its features.
+
+## Sections
+### New match
 
 ![4](https://user-images.githubusercontent.com/22590804/27739861-56a1d1b2-5db0-11e7-8c30-860464585d60.jpg)
 
-Nella creazione di una partita viene chiesto all’utente di specificare vari parametri quali: 
- 
--	**Nome partita**: nome da attribuire alla partita. Usato successivamente nella maggior parte delle interazioni in cui l’utente deve specificare la partita di riferimento (es: ripresa di una vecchia partita, ottenere informazioni su in giocatore ed altro). 
--	**N° Giocatori**: selezionabile mediante l’apposito menu a tendina permette di specificare il numero dei giocatori che vogliono partecipare alla partita. 
--	**Nome giocatori**: nome o nickname dei giocatori della partita. 
--	**Colore**: colore scelto dal giocatore con il quale intende giocare. 
-A seconda del numero dei giocatori selezionati (minimo tre giocatori) verranno resi disponibili o meno i campi per l’inserimento di tali informazioni. 
- 
-Una volta pronti è possibile iniziare la partita premendo sul pulsante  **[ Inizia Partita ]**. 
+When creating a game, you are asked to specify various parameters such as:
 
-:star: **Feature**: Opportuni controlli evitano l’inserimento di caratteri speciali e spazi che possono portare a un malfunzionamento generale; così come campi lasciati completamente vuoti. Inoltre ogni campo è impostato per accettare una lunghezza massima di caratteri prefissati (nome partita: max 20 caratteri, nome giocatori: max 10 caratteri). 
-Per evitare di prendere i valori scelti dall’utente per poi verificarli ed eventualmente informare l’utente sul loro non utilizzo si è preferito affidarsi ad eventi quali Key Pressed e Key Typed creati ad hoc per non accettare caratteri non consoni. 
+- **Nome partita**: Name to be assigned to the match. Used subsequently in most interactions where the user has to specify the reference game (eg, resuming an old match, getting player information, and more).
+- **N° Giocatori**: selectable with the drop down menu allows you to specify the number of players who want to participate in the game.
+- **Nome Giocatore**: Name or nickname of the players in the match.
+- **Colore**: the color chosen by the player with whom he intends to play.
+Depending on the number of players selected (minimum three players) will be made available or not the fields for entering such information.
+ 
+Once ready, you can start the game by pressing the **[ Inizia Partita ]** button.
 
-
-Tra i controlli presenti, la partita non viene creata quando: 
--	Esiste già una partita con lo stesso nome scelto dall’utente. 
--	Ci sono due o più giocatori con lo stesso nickname (la gestione è case sensitive, ovvero un giocatore “Pippo” è diverso dal giocatore 
-“pippo”). 
--	Ci sono due o più giocatori con lo stesso colore. - Sono presenti campi vuoti. 
- 
-In questi casi l’utente viene informato con un opportuno avviso indicante l’errore commesso. 
+:star: **Feature**: Opportune controls avoid inserting special characters and spaces that can lead to a general malfunction; as well as fields left completely empty. Each field is also set to accept a maximum length of predefined characters (match name: max 20 characters, player name: max 10 characters).
+To avoid picking the values you have chosen and then checking for them and possibly informing you about their non-use, you have preferred to rely on events such as Key Pressed and Key Typed that you created ad hoc for not accepting non-consonant characters.
 
 
-### Riprendi Partita
+Among the controls present, the game is not created when:
+- There is already a match with the same name chosen by the user.
+- There are two or more players with the same nickname (management is case sensitive, meaning a player "Pippo" is different from the player
+"pippo").
+- There are two or more players with the same color. - Empty fields are present.
+
+
+In such cases, the user is informed of a mistake made with a suitable notice.
+
+
+### Resume Match
 
 ![5](https://user-images.githubusercontent.com/22590804/27739863-56a702e0-5db0-11e7-833e-a61d934589a2.jpg)
 
-Tutte le partite che non hanno ancora un vincitore decretato possono essere riprese mediante questa funzionalità. 
-All’utente verrà mostrata la lista di tutte le partite presenti. Scelto il nome della partita esso deve essere scritto nell’apposito campo sotto e successivamente si può procedere premendo il pulsante **[ Riprendi Partita ]**.  
+All matches that do not yet have a decree winner can be resumed with this feature.
+The user will be shown the list of all the items present. Choosing the name of the game must be written in the appropriate field below and then you can proceed by pressing the **[ Riprendi Partita ]** button.
 
-:star: **Feature**: le azioni svolte in una partita si dividono in tre fasi: posizionamento, combattimento, spostamento. Quando si decide di fermare una partita necessariamente ci si trova in una di queste fasi. Alla sua ripresa l’applicativo verifica in base al turno del giocatore (ovvero l’ultimo turno corrispondente al giocatore a cui tocca) in quale delle tre fasi non è presente ancora una “riga” con le informazioni del giocatore. Necessariamente sarà una delle tre, e la prima trovata sarà proprio la fase di gioco da riprendere. 
+:star: **Feature**: actions in a game are divided into three phases: positioning, fighting, moving. When you decide to stop a game u will necessarily find yourself in one of these stages. Upon his resumption, the application verifies the player's turn (that is, the last round corresponding to the player to whom he touches) in which of the three stages there is not yet a "line" with player information. Necessarily it will be one of the three, and the first one will be just the playing phase to be resumed.
 
 ### Tools 
 
 ![6](https://user-images.githubusercontent.com/22590804/27739862-56a6d6a8-5db0-11e7-9d7c-92e5dbad4b1a.jpg)
 
-Permette all’utente di ottenere tutte le informazioni su una partita. In alto a sinistra è presente il riquadro contenente il nome di tutte le partite che sono presenti.  
-Scelto il nome della partita e scritto nel campo al posto di “nome partita…” si può procedere a: 
- 
--	**[ Ripercorri la partita ]**: vengono mostrate nel riquadro grande, sotto alla scritta “riassunto della partita”, tutte le informazioni passo dopo passo dello svolgimento della partita. Maggiori dettagli su 
-“Otteniamo qualche informazione” pagina: 31. 
--	**[ Elimina la partita ]**: eliminazione della partita e di tutte le informazioni salvate su essa. 
--	**[ Altre info ]**: ulteriori informazioni su: giocatori, turni e generali. 
- 
-Caso in cui si procede a ripercorrere una partita, oltre ad ottenere tutte le informazioni nel riquadro grande verranno mostrate anche alcune informazioni quali: 
- 
--	**Stato della partita**: può essere di due tipi: o 	In corso: partita non finita senza alcun vincitore o 	Finita: partita conclusa con un vincitore 
--	**Vincitore**: a seconda dello stato della partita sarà presente il nickname del giocatore vincitore oppure la parola “Nessuno”. 
--	**Totale turni**: valore numerico che esprime il numero di turni a cui si è arrivati durante la partita. 
--	**Totale combattimenti**: valore numerico che esprime il numero di combattimenti che sono avvenuti durante la partita. 
+Allows the user to get all the information on a game. In the top left, there is a box containing the name of all the matches that are present.
+Choosing the name of the match and writing in the field instead of "nome partita..." you can proceed to:
+
+-	**[ Ripercorri la partita ]**: are shown in the big box, under the "riassunto della partita" entry, all the step-by-step information about the game. More details on
+"We get some information".
+-	**[ Elimina la partita ]**: delete a present game and all the information saved on it.
+-	**[ Altre info ]**: more information about: players, shifts and general.
+
+When a game is played back, in addition to getting all the information in the big box you will also see some information such as:
+
+-	**Stato della partita**: can be of two types: In corso: unfinished match without any winner or Finita: match ended with a winner.
+-	**Vincitore**: Depending on the status of the game there will be the nickname of the winning player or the word "Nessuno".
+-	**Totale turni**: numeric value that expresses the number of shifts that were reached during the game.
+-	**Totale combattimenti**: numeric value that expresses the number of fights that took place during the game.
 
 ### Download
 
 ![7](https://user-images.githubusercontent.com/22590804/27739860-56a05d8c-5db0-11e7-93c5-5cad62fc4c4b.jpg)
 
-Area dove l’utente può scaricare i file/script: 
--	**[ Database ]**: file per procedere con la creazione del database in base alle regole del gioco RisiKo! 
--	**[ Popolamento ]**: file che mostra un esempio di popolamento da poter eseguire nel database. 
+Area where user can download files / scripts:
+-	**[ Database ]**: file to proceed with creating the database according to the rules of the game RisiKo!
+-	**[ Popolamento ]**: file that shows a popup example that you can run in the database.
 
 :heavy_exclamation_mark:
-:point_right: Ogni partita nel database è registrata mediante un codice numerico, ovvero valori interi che partono da 1 a N. Ad esempio la partita “MulinoBianco” ha un codice pari a 4, mentre la partita “Frollino” ha un codice pari a 5.  
-Nel caso in cui si scarichi il file di popolamento, il valore alla partita ad esso associato è pari a 1. Questo comporta che se è già presente una partita con tale valore associato, lo script del popolamento non verrà eseguito. 
-La scelta del valore 1 è derivata dalla motivazione che lo script del popolamento venga eseguito quando il database è “nudo e crudo”, ovvero proprio come file di esempio usato prima di procedere a qualsiasi altro inserimento tramite database e/o applicativo. 
+:point_right: Each game in the database is registered by a numeric code, ie integers ranging from 1 to N. For example, the "MulinoBianco" game has a code of 4, while the "Frollino" game has a code of 5.
+If you download the popup file, the value for the associated match is equal to 1. This means that if a match with that associated value is already present, the popup script will not run.
+The choice of value 1 is derived from the motivation that the popup script is executed when the database is "naked and raw", just as a sample file used before proceeding to any other insertion through database and / or application.
 
 
-# Giocare una partita
-## Fase preliminare
+# Play a game
+## Preliminary phase
 
 ![1](https://user-images.githubusercontent.com/22590804/27741493-9b4aecae-5db5-11e7-8983-0b8e21e09e7b.jpg)
 
-Una volta creata una partita l’utente si ritroverà in una schermata simile a quella nella figura mostrata sopra. 
+Once a game is created, the user will find himself in a screen similar to the one shown in the picture above.
 
-Tale schermata racchiude la fase preliminare di gioco.  
- 
-La fase prevede l’inserimento di un numero di armate prefissato (indicato nella schermata sotto “N° armate max da inserire”) in uno o massimo tre territori appartenenti al giocatore. 
+This screen encloses the preliminary game stage.
 
-Nella parte in alto è possibile visualizzare informazioni quali: 
--	**Tocca a**: mostra il nickname del giocatore a cui tocca svolgere l’azione, in questo caso l’inserimento di armate. - Il tuo ID: identificativo associato al giocatore. 
--	**Partita N°**: identificativo associato alla partita/numero della partita. 
--	**Nome Partita**: nome che è stato dato dall’utente alla partita. 
--	**N° armate max da inserire**: sono il numero massimo di armate che il giocatore può inserire in uno o più territori. 
--	**N° armate totali**: sono il numero di armate che restano ancora da inserire. 
-In basso a destra si trova invece: 
--	**N° turno**: valore numerico del turno di gioco. 
+The phase involves the insertion of a predetermined number of armies (shown on the screen below "N° armate max da inserire") in one or a maximum of three territories belonging to the player.
 
-***Maggiori dettagli su N° turno***: il gioco ruota attorno ai turni, espressi in questo caso tramite valori numerici da 1 a N. In ogni turno c’è sempre un giocatore ad esso associato (esempio al turno n°3 c’è associato “Simone”, il n°4 “Pluto” e così via). In parole semplici il turno corrisponde al “a chi tocca giocare ora?”. 
+In the top part you can view information such as:
+-	**Tocca a**: shows the nickname of the player to play the action, in this case the insertion of armies. - Il tuo ID: identifier associated with the player.
+-	**Partita N°**: identification associated to match/number of match.
+-	**Nome Partita**: name that was given by the user to the game.
+-	**N° armate max da inserire**: are the maximum number of armies that the player can enter in one or more territories.
+-	**N° armate totali**: are the number of armies that are still to be entered.
+In the lower right there is:
+-	**N° turno**: the numerical value of the round of play.
 
-A sinistra, invece, vengono indicati i territori **(I tuoi territori)** del giocatore e il numero di armate presenti in esso **(Carri sul territorio)**. Inizialmente ogni territorio avrà un’unica armata a presidiare.  
+***More details on N° turno***: the game rotates around the turns, expressed in this case by numeric values from 1 to N. In each turn there is always a player associated with it (example at round number 3 there is associated "Simone", the number 4 "Pluto" and so on). In simple words, the turn corresponds to "who touches play now?".
 
-Le informazioni inerenti al: **Il tuo ID**, **Partita N** e **N° turno** possono tranquillamente essere trascurate dal giocatore (sono presenti per verificare e visualizzare la corretta continuità della partita) in quanto le restanti informazioni bastano per poter inserire le armate. 
+On the left, instead, you indicate the territory **(I tuoi territori)** of the player and the number of armies in it **(Carri sul territorio)**. Initially each territory will have one armed army to guard.
 
-L’ultima parte, a destra, seguita dalla scritta **“Posizionamento”** è formata da tre parti: 
--	**Nome territorio**: va inserito il nome del territorio dove si vogliono aggiungere le armate. 
--	**N° armate**: valore numerico di armate che si vogliono inserire sul territorio espresso in precedenza. 
--	**Abilita territorio**: se il giocatore decide voler inserire delle armate in un altro territorio, può abilitare tale inserimento spuntando la casella ad esso relativa. 
+The information about: **Il tuo ID**, **Partita N** and **N° turno** can safely be neglected by the player (they are present to verify and display the correct continuity of the game) as the remaining Information is enough to be able to enter armies.
 
-***Maggiori dettagli su abilita territorio***: fino ad esaurimento delle armate da poter inserire, come da regolamento, ogni giocatore deve disporre al massimo 3 armate su ogni territorio di sua appartenenza. 
-Per motivi strategici un giocatore può ad esempio posizionare 2 armate sul territorio A mentre 1 la posiziona sul territorio B. 
-Per effettuare tali posizionamenti, il giocatore scriverà A nel primo campo sotto a “Nome territorio” e il valore 2 nel campo affianco, successivamente dovrà spuntare la seconda (o terza) checkbox per poter scrivere il territorio B e il valore 1. 
-Massimo tre territori possono essere abilitati in quanto al massimo possono essere inserite 3 armate in tre territori (1 armata su ciascun territorio). 
+The last part, on the right, followed by the word **“Posizionamento”** consists of three parts:
+-	**Nome territorio**: enter the name of the territory where you want to add the armed forces.
+-	**N° armate**: the numerical value of the armed forces that you want to enter in the territory previously expressed.
+-	**Abilita territorio**: if player decides to insert armies into another territory, he can enable that entry by ticking the corresponding box.
 
-:star: **Feature**: In ogni campo vengono vietati i copia-incolla di informazioni per evitare che si vada a copiare qualche carattere speciale che possa danneggiare il successivo inserimento nel database. Inoltre opportuni controlli verificano che il nome del territorio sia coretto e che appartenga al giocatore. Certo non vogliamo che rendi più forti i nemici regalando loro armate! 
+***More details on abilita territorio***: as long as the armies are not finished, as per regulation, each player must have at most 3 armies in each territory.
+For strategic reasons, a player can, for example, place 2 armies on territory A and 1 on territory B.
+To make such placements, the player will write A in the first field under "Nome territorio" and the value 2 in the field next, then check the second (or third) checkbox to write the B territory and the value 1.
+Up to three territories can be empowered as maximum three armies can be placed in three territories (1 army on each territory).
 
-Scelto almeno un territorio e il numero di armate da inserire si può procedere premendo sul pulsante **[ Inserisci ]**. 
+:star: **Feature**: In each field, copy-paste information is forbidden to prevent copying of some special characters that may cause subsequent insertion into the database. Additionally, appropriate checks verify that the name of the territory is correct and that it belongs to the player. Of course we do not want to make enemies stronger by giving them armies!
 
-La fase preliminare dura finché tutti i giocatori hanno ancora armate da aggiungere. Una volta che ogni giocatore ha finito il numero di armate si entra nel vivo del gioco. 
+At least one territory chosen and the number of armies to be entered can be done by pressing the **[ Inserisci ]** button.
 
-:star: **Feature**: Si parte sempre dal turno numero 1, in realtà esiste anche il turno 0.  
-Questo è usato dal database per comprendere che i giocatori che vogliono partecipare alla partita sono finiti e che si può passare alla fase successiva di preparazione. 
-In tale fase il database randomizza i territori e li assegna ai giocatori (posizionando 1 armata su ogni territorio), assegna gli obiettivi e stabilisce il giro che i giocatori devono fare (proprio per questo non è detto che il giocatore di id numero 1 sia il primo a cominciare).  
+The preliminary phase lasts until all the players have armed to add. Once each player has finished the number of armies he gets into the game's life.
 
-## Fase posizionamento
+:star: **Feature**: it always starts from turn number 1, actually there is also turn 0.
+This is used by database to understand that players who want to participate in the game are over and that you can go to the next stage of preparation.
+At this stage, the database randomizes the territories and assigns them to the players (placing 1 armed on each territory), assigns the goals and sets the round that the players have to do (this is not to say the id number player 1 is the First to start).
+
+## Positioning phase
 
 ![2](https://user-images.githubusercontent.com/22590804/27741496-9b54ac1c-5db5-11e7-92dd-8e92eb11542e.jpg)
 
-Terminata la fase preliminare inizierà la fase vera e propria di gioco. Essa viene divisa in tre parti: 
- 
--	**Posizionamento**: il giocatore ha diritto a ogni turno l’inserimento di N armate (calcolate in base ai suoi territori o tramite una combinazione di carte) nei suoi territori. 
--	**Combattimento**: si può decidere o meno se attaccare i territori nemici con le proprie armate. 
--	**Spostamento**: si può decidere o meno se spostare un certo numero di armate da un proprio territorio ad un altro. 
-La schermata della fase di posizionamento contiene in parte le medesime informazioni già viste.
+When the preliminary phase is over, the real phase of the game begins. It is divided into three parts:
 
-Vi si aggiungono: 
--	**N° armate max che si possono inserire**: valore numerico che esprime il numero esatto di armate che il giocatore può inserire in uno o più dei suoi territori. 
--	**Tipo inserimento**: il giocatore può scegliere come ottenere il numero di armate specificando il tipo di inserimento. Si divide in: 
-inserimento classico e inserimento combinazione carte. 
--	**Le tue carte**: le carte che ha in mano il giocatore. Per comodità vengono espresse mediante una singola lettera (C – Cavalleria, F – Fante, A – Artigliere, J – Jolly).  
--	**Il tuo obiettivo**: viene indicato l’obiettivo che è stato affidato al giocatore. Se un giocatore raggiunge il proprio obiettivo viene dichiarato vincitore, concludendo la partita. 
--	**Territori confinanti**: per motivi strategici il giocatore di turno può inserire un qualsiasi nome territorio (suo e non) nel campo sotto la scritta “Nome territorio” e premendo il pulsante [ Mostra territori confinanti ] verranno mostrati tutti i territori confinanti a quello scelto. 
+-	**Posizionamento**: the player has the right every turn to enter N armed (calculated on the basis of his territories or a combination of cards) in his territories.
+-	**Combattimento**: u can decide whether or not to attack the enemy territories with your own armies.
+-	**Spostamento**: You can decide whether or not to move a certain number of armies from one territory to another.
+The positioning screen contains some of the information already seen.
 
-***Maggiori dettagli su N° armate max che si possono inserire***: esprime come detto il numero massimo di armate che il giocatore può inserire.  Tale valore viene può essere calcolato in due modi in base alla scelta del giocatore. 
+Additionally:
+-	**N° armate max che si possono inserire**: numeric value that expresses the exact number of armies that the player can enter in one or more of his territories.
+-	**Tipo inserimento**: the player can choose how to get the number of armies by specifying the type of insertion. It is divided into:
+Inserimento classico and Inserimento combinazione carte.
+-	**Le tue carte**: cards that have in hand the player. For convenience, they are expressed in a single letter (C – Cavalleria, F – Fante, A – Artigliere, J – Jolly).  
+-	**Il tuo obiettivo**: the goal that has been entrusted to the player is indicated. If a player reaches his goal, he is declared a winner, completing the game.
+-	**Territori confinanti**: For strategic reasons, the player of the turn can enter any territory name (his or her) in the field under the name "Nome territorio" and pressing the **[ Mostra territori confinanti ]** button will show all the adjacent territories to that chosen.
+
+***More details on N° armate max che si possono inserire***: expresses as stated the maximum number of armies that the player can enter. This value can be calculated in two ways depending on the player's choice.
 
 
 ![3](https://user-images.githubusercontent.com/22590804/27741495-9b538bac-5db5-11e7-875c-32ae660e70e4.jpg)
 
 
-Come mostrato le opzioni si dividono in: 
--	**Inserimento classico**: il numero di armate viene calcolato da quanti sono i territori occupati dal giocatore diviso per tre. Inoltre se il giocatore occupa tutti i territori di uno o più continenti ha diritto a un numero di armate supplementari. 
--	**Inserimento combinazione carte**: include il numero di armate calcolato dall’inserimento classico più ulteriori armate supplementari date dalla combinazione di carte usata dal giocatore. 
- 
-***Nota: sul numero di armate leggere il regolamento del gioco.*** 
- 
-A seconda della scelta del tipo inserimento il valore di “N° armate max che si possono inserire” varia.  
+As shown, the options are divided into:
+-	**Inserimento classico**: the number of armies is calculated by how many the territories occupied by the player divided by three. Additionally, if the player occupies all the territories of one or more continents, he is entitled to an additional number of armies.
+-	**Inserimento combinazione carte**: includes the number of armies calculated by the additional classical addition of additional armaments given by the card combination used by the player.
+
+***Note: on the number of armies read the rules of the game.***
+
+Depending on the type of insertion type, the value of "max armata that can be inserted" varies.
 
 ![4](https://user-images.githubusercontent.com/22590804/27741497-9b569ea0-5db5-11e7-981f-106dc493c904.jpg)
 
 
-L’esempio sopra mostra come la scelta di un inserimento classico abbia dato al giocatore un inserimento di massimo 4 armate. 
- 
-Caso in cui, invece, viene scelto inserimento combinazione carte, si abiliterà il pannello sotto la scritta “Carte” come mostrato. 
+The example above shows how choosing a classic insertion has given the player a maximum of 4 armies.
+
+In case, however, card combination insertion is selected, the panel will be enabled under the letter "Carte" as shown.
 
 ![5](https://user-images.githubusercontent.com/22590804/27741494-9b4c2754-5db5-11e7-9110-3bb6b22b0f8e.jpg)
 
 
-Il giocatore può scegliere quale combinazione di carte utilizzare in base alle carte che ha a disposizione (sotto la casella: “Le tue carte”). Per facilitare la lettura vicino a ogni combinazione è presente la combinazione di lettere che il giocatore deve possedere. Ad esempio se il giocatore ha le seguenti carte: A – A – C – F – A, può scegliere di usare la combinazione FCA oppure la combinazione AAA. 
-Una volta selezionata la giusta combinazione basterà premere sul pulsante  **[ Usa combinazione ]** e in automatico verranno aggiornate il numero di armate massiche che si devono inserire. 
+The player can choose which combination of cards to use based on the cards he has available (under the box "Le tue carte"). To facilitate reading close to each combination, there is a combination of letters that the player must own. For example, if the player has the following cards: A - A - C - F - A, he can choose to use the FCA combination or the AAA combination.
+Once the correct combination is selected, just press the **[ Usa combinazione]** button and automatic will update the number of massive armies that you must enter.
 
 
-:star: **Feature**: Una carta di gioco è composta da due informazioni: territorio e simbolo. Il territorio è uno dei territori presenti nella mappa di gioco mentre il simbolo può essere uno dei caratteri: C,F,A,J. Il regolamento del gioco prevede che se il giocatore nella combinazione di carte usata possiede anche il territorio di una o più carte, ha diritto ad un supplemento di ulteriori 2 armate. 
-Allora cosa succede se il giocatore ha in mano delle carte tipo: F – C – A – A, dove solo una delle A è associata anche a un territorio che lui possiede?  
-Siccome la combinazione prevede F – C – A, quali delle due A viene presa per formare tale combinazione? 
-La risposta più ovvia è considerare la A che comprende anche il territorio posseduto dal giocatore, così da avere un numero ancora maggiore di armate da inserire. 
-Ed è anche la risposta data dal database. Infatti il database inizia la ricerca della migliore carta A, ovvero quella che comprende anche un territorio posseduto dal giocatore. 
-Quindi in questo caso tra le due A verrà selezionata quella che permette di avere 2 armate supplementari. 
+:star: **Feature**: a gambling card consists of two information: territory and symbol. The territory is one of the territories in the game map while the symbol may be one of the characters: C, F, A, J. The rules of the game provide that if the player in the combination of cards used also has the territory of one or more cards, he is entitled to a supplement of 2 additional armies.
+So what if the player has in his hand cards like: F - C - A - A, where only one of the As is also associated with a territory that he owns?
+Since the combination involves F - C - A, which of the two A is taken to form such a combination?
+The most obvious answer is to consider A that also includes the territory owned by the player, so that they have an even greater number of armies to insert.
+And it is also the answer given by the database. In fact, the database begins to search for the best A card, which also includes a territory owned by the player.
+So in this case, two A will be selected between two.
 
 
-Una volta scelto un tipo di inserimento verrà abilitato il pulsante **[ Inserisci carri ]**.  
-Il giocatore può quindi procedere a inserire il nome di un territorio da lui posseduto (visibile nella schermata “I tuoi territori”) nell’apposito campo sotto a “Nome territorio”. 
-Successivamente può scegliere il numero di armate che si vuole posizionare sul territorio scrivendo nel campo al di sotto si “N° armate”. Infinite basta premere il pulsante **[ Inserisci carri ]** per effettuare l’inserimento. Il numero di armate verrà aggiornato istantaneamente nella schermata “Carri sul territorio” relativo al territorio scelto.  
-Il giocatore può anche decidere di inserire le armate che ha a disposizione in più territori. 
-Una volta inserite un numero di armate inferiore al numero massimo di armate che possono essere inserite; basta eliminare il nome del primo territorio scritto e inserire un nuovo nome territorio con le relative armate. 
- 
-Una volta inserite tutte le armate date si passa alla fase successiva. 
+Once you have selected an insertion type, the button **[ Inserisci carr ]** will be enabled.
+The player can then enter the name of a territory he owns (visible in the "I tuoi territori" screen) in the appropriate field under "Nome territorio".
+You can then choose the number of armies that you want to place on the territory by writing in the field below the "N° Armate". Infinite just press the **[ Inserisci carri]** button to make the insertion. The number of armies will be instantly updated in the "Carri sul territorio" screen for the chosen territory.
+The player may also decide to place the armies he has in multiple territories.
+Once you have armed numbers below the maximum number of Arms that can be inserted; just delete the name of the first written territory and enter a new territory name with its armed forces.
+ 
+Once you have entered all your armies, you go to the next step.
 
 
-## Fase di combattimento 
+## Combat phase
 
 ![1](https://user-images.githubusercontent.com/22590804/27741814-a5ac8d82-5db6-11e7-9ec9-5c43afacffd5.jpg)
 
-Sia la fase di combattimento che la fase successiva di spostamento rientrano nelle fasi opzionali. Il giocatore è libero di scegliere di non compiere nessun combattimento o spostamento. 
- 
-In questa fase è presente in basso al centro il pulsante **[ Finisci i combattimenti ]**. 
-Tale pulsante può essere utilizzato per: 
--	Passare alla fase successiva senza aver effettuato nessun combattimento. Semplicemente va premuto una volta che appare la schermata di combattimento. 
--	Passare alla fase successiva dopo aver effettuato N combattimenti. 
- 
-Come nelle schermate precedenti sono presenti informazioni già descritte.
-Per descrivere al meglio le rimanenti informazioni e l’intera schermata, seguiamo passo dopo passo un possibile combattimento. 
- 
-Il giocatore di turno decide di voler effettuare un combattimento. Il territorio da cui far partire l’attacco sarà l’Ontario. Questo viene scritto  
-nella casella sotto “Nome territorio attaccante” come mostrato nella figura. 
- 
+Both combat phase and the next phase of displacement fall into the optional stages. The player is free to choose not to make any fighting or move.
+
+At this stage, the button is located at the bottom of the center **[ Finisci i combattimenti]**.
+This button can be used for:
+-	Go to the next step without having to do any fighting. Simply press it once the combat screen appears.
+-	Go to the next step after having N fights.
+
+As in the previous screens, there are already described information.
+To best describe the remaining information and the entire screen, we follow step by step a possible fight.
+
+The turn player decides to make a fight. The territory from which to start the attack will be Ontario. This is written
+In the box under “Nome territorio attaccante” as shown in the figure.
+
 ![2](https://user-images.githubusercontent.com/22590804/27741815-a5adc6e8-5db6-11e7-8df9-4db0896b19e2.jpg)
 
-Siccome il giocatore non conosce quali siano i territori nemici che confinano con il territorio d’attacco, decide di premere il pulsante **[ Mostra confini nemici ]** ottenendo a destra le informazioni su: 
--	**Territori nemici confinanti**: i nomi, se presenti, di tutti i territori non posseduti dal giocatore che confinano con il territorio da lui espresso nel campo “Nome territorio attaccante”. 
+As the player does not know which enemy territories are bordering on the attack territory, he decides to press the button **[ Mostra confini nemici ]** to obtain the information on:
+-	**Territori nemici confinanti**: The names, if present, of all territories not owned by the player bordering the territory he has expressed in the “Nome territorio attaccante” field.
 -	**Carri sul territorio**: carri nemici presenti sul territorio. 
 -	**Colore**: colore del nemico, utile per fini strategici. 
 
 ![3](https://user-images.githubusercontent.com/22590804/27741816-a5b17b30-5db6-11e7-801c-6672065057c4.jpg)
 
-Si decide di attaccare il territorio Alberta scrivendo il nome nella casella sotto a “Nome territorio attaccato”, come mostrato. 
+You decide to attack the Alberta territory by writing the name in the box under "Attached Territory Name," as shown.
 
 ![4](https://user-images.githubusercontent.com/22590804/27741817-a5b501b0-5db6-11e7-8dc8-1d2f52002a0d.jpg)
 
-Una volta scelti il territorio d’attacco e quello d’attaccare siamo pronti all’attacco! 
-Il giocatore preme il pulsante **[ Prepara all’attacco ]**. 
- 
-Si passa alla seconda sotto fase del combattimento, il lancio dei dadi. 
-Come si può vedere dalla figura sotto una volta premuto il bottone **[ Prepara all’attacco ]** verranno aggiornate le informazioni presenti in alto a destra della schermata: 
--	**Nickname difensore**: è il nickname del giocatore che si sta attaccando. 
--	**ID difensore**: l’id del difensore che è stato assegnato. 
+Once you have chosen the attack area and the one to attack, we are ready to attack!
+The player presses the button **[ Prepara all’attacco ]**. 
+
+Go to the second phase of the fight, the dice roll.
+As you can see from the figure under the button **[ Prepara all’attacco ]**, the information on the top right of the screen will be updated:
+-	**Nickname difensore**: Is the nickname of the player he is attacking.
+-	**ID difensore**: The id of the defender who has been assigned.
 
 ![5](https://user-images.githubusercontent.com/22590804/27741818-a5b5a638-5db6-11e7-8f89-f84e399cff37.jpg)
 
-Per lanciare i dadi bisogna prima specificare il numero di dadi da lanciare.  Ciò può essere fatto mediante il menu a tendina presente sia per il giocatore attaccante che per quello che si difende (figura sotto). Il massimo numero di dadi che possono essere lanciati da entrambi i giocatori è 3. 
-Ovviamente il numero di dadi da usare dipende sia dalle strategie usate dai giocatori che dal numero di armate presenti in entrambi i territori. Infatti ogni dado è associato a una armata.  
-Se il giocatore attaccante possiede 2 armate non può lanciare 3 dadi così come non può lanciarne 2 (si ricordi che secondo le regole di gioco sul territorio attaccante deve esserci sempre 1 armata a presidiare, quindi avendo 2 armate non sarà possibile effettuare un lancio di 2 dadi in quanto in caso di sconfitta si perderebbe il territorio, contravvenendo al regolamento). 
+To launch the dice, first specify the number of dice to be fired. This can be done using the drop-down menu for both the attacking player and the defensive player (see below). The maximum number of dice that can be launched by both players is 3.
+Obviously, the number of dice to use depends on both the strategies used by the players and the number of armies in both territories. In fact, each nut is associated with an armor.
+If the attacking player has 2 armies he can not cast 3 dice as he can not throw 2 (remember that according to the rules of the game on the attacking territory there must always be 1 armed guard, so having 2 armies will not be able to launch a 2 Because in case of defeat the territory would be lost, in violation of the regulation).
 
 ![6](https://user-images.githubusercontent.com/22590804/27741820-a5c6c60c-5db6-11e7-8510-3d5b9a9c56f2.jpg)
 
 
-Selezionato il numero di armate verranno abilitate le caselle sottostanti dove andranno inseriti i valori dei dadi lanciati. 
-Qui sotto un esempio: 
+When selected the number of armed ones, the boxes below will be enabled where the values of the darts launched will be entered.
+Here's an example:
 
 ![7](https://user-images.githubusercontent.com/22590804/27741819-a5c678dc-5db6-11e7-8fd7-bb5942776ad1.jpg)
 
-Quando è tutto pronto il giocatore non deve fare altro che premere il pulsante **[ Attacca ]** per dare inizio al combattimento. 
-E’ possibile anche decidere di non voler più attaccare il territorio stabilito, in questo caso basta premere su **[ Cambia territorio da attaccare ]**. 
-In questo caso si decide si attaccare. Una volta premuto il pulsante **[ Attacca ]** il giocatore verrà notificato sull’esito del combattimento, ottenendo le informazioni sul numero di armate perse (sia dell’attaccante che del difensore). 
+When it is all ready, the player must only press the ** [Attach] ** button to start the fight.
+It is also possible to decide that you no longer want to attack the established territory, in this case just press **[ Cambia territorio da attaccare ]**. 
+In this case you decide to stick. Once the button **[ Attacca ]** is pressed, the player will be notified of the outcome of the combat, obtaining information on the number of armies lost (both of the attacker and the defender).
 
 ![8](https://user-images.githubusercontent.com/22590804/27741821-a5c9c3ca-5db6-11e7-926f-00fa3a1f1c4a.jpg)
 
-L’esito di tale combattimento ha riportato che il difensore ha perso 1 carro. Ciò è dovuto in quanto è stato preso il valore più alto lanciato dal dado dell’attaccante (5) ed è stato confrontato con il valore più alto del difensore (1), portando quindi il difensore a perdere un numero di carri pari al numero di dadi lanciati. 
- 
-Terminato il combattimento il giocatore può: 
--	Decidere di attaccare nuovamente semplicemente scrivendo il valore dei nuovi dadi lanciati e ripremendo il pulsante **[ Attacca ]**. 
--	Cambiare il territorio da attaccare premendo **[ Cambia territorio da attaccare ]**. 
--	Finire i combattimenti premendo **[ Finisci i combattimenti ]**. 
- 
-Supponiamo di voler proseguire l’attacco finché nel territorio Alberta non restano più armate per difenderlo. 
-In questo caso il giocatore attaccante conquisterà il territorio e apparirà una notifica del tipo: 
+he outcome of this fight has revealed that the defender has lost one wagon. The highest value was dropped by the attacker's nut (5) and was compared with the highest value of the defender (1), thus leading the defender to lose a number of wagons equal to the number of darts thrown.
+
+When the combat is over, the player can:
+-	Decide to stick again simply by writing down the value of the new dice rolled up and pressing the **[ Attacca ]**.
+-	Change the territory to attack by pressing **[ Cambia territorio da attaccare ]**.
+-	Finish the fighting by pressing **[ Finisci i combattimenti ]**. 
+
+Let's suppose we want to continue the attack until Alberta is no longer armed to defend it.
+In this case, the attacking player will conquer the territory and a notification of the type will appear:
 
 ![9](https://user-images.githubusercontent.com/22590804/27741822-a5d06b4e-5db6-11e7-9016-d63aacff6671.jpg)
 
-Conquistato il territorio, come scritto dalla notifica, vengono spostate N armate quanto il numero di dadi lanciato. 
-Il giocatore però, può decidere anche di spostare tutte le armate (eccetto una che deve rimanere a presidiare) dal territorio attaccante a quello conquistato. Per farlo basterà premere sul pulsante in basso **[ Sposta tutte le armate ]**. 
- 
-Avendo conquistato il territorio Alberta, lo si ritroverà all’interno dello  elenco “I tuoi territori” con il numero di armate stabilito (in questo caso l’attacco è stato effettuato usando 2 dadi e quindi sono state spostate 2 armate). 
+Conquered the territory, as written by the notification, are moved N armed as the number of dice rolled.
+However, the player may also decide to move all the armies (except one who has to stay) from the attacking territory to the one gained. To do so just press the button below **[ Sposta tutte le armate ]**. 
+
+Having conquered the territory of Alberta, you will find it in the "Your Territories" list with the number of armies established (in this case the attack was made using 2 dice and then 2 armed were moved).
 
 ![10](https://user-images.githubusercontent.com/22590804/27741864-c857f524-5db6-11e7-9bdf-25878f6faa12.jpg)
 
-***Ulteriori informazioni***: ad ogni territorio conquistato viene verificato se il giocatore difensore abbia perso proprio l’ultimo territorio che aveva.  Caso positivo viene notificato all’utente che il giocatore difensore ha perso.  Allo stesso modo viene verificato che il giocatore attaccante, conquistato un nuovo territorio, abbia raggiunto il suo obiettivo.  
-Caso positivo viene notificato all’utente che il giocatore attaccante ha vinto la partita e si viene riportati al menu principale. 
- 
-Finiti i combattimenti si decide di passare alla fase successiva premendo sul pulsante **[ Finisci i combattimenti ]**. 
+***Further information***: Every territory won is verified if the defending player has lost the last territory he had. A positive case is notified to the user that the defending player has lost. Likewise, it is verified that the attacking player, who has conquered a new territory, has achieved his goal.
+A positive case is notified to the user that the attacking player has won the game and is brought back to the main menu.
+
+When the fighting is over, you decide to go to the next step by pressing the button **[ Finisci i combattimenti ]**. 
 
 
-:star: **Feature**: La fase di combattimento è quella che ha più controlli e chiamate al database rispetto a tutte le altre schermate dell’applicativo. Tra i tanti controlli si va a verificare ad esempio: se il giocatore ha il territorio da cui far partite l’attacco, se il territorio d’attacco confina con quello da attaccare, se entrambi i territori non appartengono allo stesso giocatore, se è presente più di 1 armata nel territorio d’attacco e tanti altri. Lo stesso vale per il lancio dei dadi, così come la chiamata a opportune funzioni del database per la verifica dell’esito del combattimento, o per la verifica della vittoria del giocatore o della sconfitta del giocatore difensore. 
+:star: **Feature**: The combat phase is the one that has multiple controls and calls to the database compared to all the other application screens. Among the many controls you go to check for example: if the player has the territory from which to start the attack, if the attack territory is confined to the one to attack, if both territories are not the same player, if it is present More than 1 armed in the area of attack and many others. The same applies to the launch of the dice, as well as the call to appropriate database functions to verify the outcome of the fight, or to verify the player's victory or the defeat player defeat.
 
 
 
-## Fase spostamento  
+## Moving phase
 
 ![1](https://user-images.githubusercontent.com/22590804/27742209-14cdf1a0-5db8-11e7-8c6e-c8f4f8aabd85.jpg)
 
-Si è arrivati all’ultima fase di gioco che conclude il turno del giocatore, lo spostamento. 
-Come nella fase di combattimento, anche qui è possibile scegliere se effettuare uno spostamento di armate oppure non farlo premendo semplicemente sul pulsante **[ Non effettuare nessuno spostamento ]**. 
+It came to the last stage of the game that ends the player's turn, the move.
+As in the combat phase, you can still choose whether to make an armed move or not to do so by just pressing the **[ Non effettuare nessuno spostamento ]** button.
 
 
-Nel caso in cui si voglia spostare un certo numero di armate da un territorio ad un altro, bisogna inserire il nome del territorio di partenza nella casella sotto “Nome territorio di partenza”. 
- 
-Siccome uno spostamento può avvenire solo tra territori confinanti appartenenti allo stesso giocatore del turno in corso, premendo sul pulsante **[ Mostra confini ]** verranno mostrati, se presenti, i territori confinanti che appartengono al giocatore dove è possibile inviare le armate. In questo caso il territorio Venezuela del giocatore ha come territorio confinante appartenente al giocatore stesso il Brasile. 
+In case you want to move a number of armies from one territory to another, you must enter the name of the starting territory in the box under "Nome territorio di partenza".
+
+Since a move can only take place between adjacent territories belonging to the same player in the current round, pressing the **[ Mostra confini ]** button will show, if present, the neighboring territories belonging to the player where the armies can be sent. In this case, Venezuela's territory has a neighboring territory belonging to the player himself in Brazil.
 
 ![2](https://user-images.githubusercontent.com/22590804/27742210-14d2cd42-5db8-11e7-939d-113df6daabdc.jpg)
 
-Scelto il territorio in cui spostare le armate e scritto nel riquadro sotto 
-“Nome territorio d’arrivo” non resta che specificare il numero di armate da spostare in “N° armate da spostare”. 
- 
-Fatto tutto basterà premere sul pulsante sposta armate per ricevere la notifica del coretto spostamento. 
+Choose the territory where the armed forces are to be moved and written in the box below
+"Nome territorio d’arrivo" has to specify the number of armies to be moved to "N° armate da spostare".
+
+All it takes is to simply press the armed push button to receive the correct shift notification.
 
 ![3](https://user-images.githubusercontent.com/22590804/27742211-14d7e53e-5db8-11e7-93a1-77715055ce41.jpg)
 
-Con questo si conclude l’ultima fase del turno del giocatore e si ripartirà dalla prima fase “Posizionamento” con il giocatore successivo. 
- 
-Il giro quindi creato “Posizionamento – Combattimento – Spostamento” verrà interrotto solo se: 
--	Viene proclamato un vincitore. 
--	Si decide di mettere in pausa la partita premendo sull’icona X della schermata in cui vi si trova. 
+This completes the last phase of the player's turn and will resume from the first "Posizionamento" phase with the next player.
 
-## Otteniamo qualche informazione 
+The round then created "Placement - Combat - Shift" will only be interrupted if:
+-	A winner is proclaimed.
+-	You decide to pause the game by pressing the X icon on the screen where it is located.
 
-###	Ripercorrere una partita 
+## Get some information
 
-Come già visto è possibile reperire passo dopo passo ogni singola mossa che si è svolta in una partita. 
- 
-Sotto è presente un esempio di ciò che può essere visto scegliendo il nome di una partita e premendo sul pulsante **[ Ripercorri la partita ]**. 
+### Retracing a game
+
+As you have seen, it is possible to find step by step every single move that took place in a game.
+ 
+Below is an example of what can be seen by choosing the name of a game and pressing the button **[ Ripercorri la partita ]**. 
 
 ![4](https://user-images.githubusercontent.com/22590804/27742208-14cb6a7a-5db8-11e7-9aed-a03f4c4712e5.jpg)
 
-Le informazioni che vengono mostrate nel riquadro grande sotto alla scritta 
-“Riassunto della partita” sono reperite dal file presente nel percorso principale dove viene avviato l’applicativo. 
+The information that is shown in the big box below the text
+"Riassunto della partita" is found from the file in the main path where the application is started.
 
-### Gestione del file Log
+## Managing Log file
 
-La gestione del file avviene nella seguente maniera: 
- 
-Il file viene generato alla creazione della partita prendendo il nome della stessa e aggiungendo il testo ***“_log.txt”*** come identificativo.  
-Di norma quando viene creata una partita non è possibile che esista già un file con il nome della partita; questo perché porterebbe ad avere nel database una partita con lo stesso nome di quella che si vuole creare, portando quindi alla non creazione della partita e, quindi, del nuovo file. Nel caso in cui sia stato generato un file che ha lo stesso nome della partita che si sta creando e tale nome non è presente nel database, il file viene sovrascritto. 
- 
-Durante lo svolgimento di una partita vengono prese tutte le informazioni pertinenti atte alla ricostruzione passo dopo passo di essa.  
-Tutte le informazioni vengono convertite in una stringa ed inviate a una apposita funzione che “apre” il file, inserisce la stringa alla fine e lo 
-“chiude”. 
- 
-L’insieme di tutte le stringhe permette di ottenere un unico file dove sono presenti informazioni riguardanti: 
--	Informazioni riguardanti la creazione della partita. Include la data, numero di giocatori presenti, nickname e colore scelto. 
--	Tutti i posizionamenti svolti nelle fasi: preliminare, posizionamento, combattimento e spostamento. Include territori, numero di armate, azioni svolte. 
--	Tutti i combattimenti svolti. Include il numero di dadi lanciati, esito del combattimento, armate perse. 
--	Ulteriori informazioni su: momenti in cui la partita è stata messa in pausa, ripresa della partita, giocatori perdenti, giocatore vincente. 
- 
-Il file viene cancellato nel caso in cui si procede alla eliminazione della partita premendo sul pulsante **[ Elimina la partita ]**. 
+File management is done as follows:
 
-:question: Alcune domande:
+The file is generated by creating the game by naming it and adding the text ***"_ log.txt"*** as an identifier.
+Normally, when a game is created, it is not possible to have a file with the name of the game; This is because it would have in the database a match with the same name as the one you want to create, thus leading to the non-creation of the game and therefore of the new file. If a file that has the same name as the game you are creating and that name is not present in the database, the file is overwritten.
+ 
+During the course of a game, all relevant information is taken to reconstruct it step by step.
+All information is converted to a string and sent to a special function that "opens" the file, inserts the string at the end and
+"Closes."
 
-**Q**: Cosa succede se eliminando una partita il file è stato già eliminato in precedenza? 
+The set of all strings allows you to get a single file where there are information about:
+-	Information about creating the game. Includes date, number of players present, nickname and color chosen.
+-	All the placements in the stages: preliminary, positioning, fighting and moving. It includes territories, number of armed forces, actions taken
+-	All the fights done. Includes the number of launched dice, the outcome of the combat, missed armies.
+-	Learn more about: moments when the game was paused, resumed the game, losing players, winning player.
 
-**A**: Viene notificato all’utente che probabilmente il file è già stato eliminato ma per evitare eventuali problemi di provvedere, se presente, alla sua eliminazione. 
- 
-**Q**: Se durante lo svolgimento di una partita si elimina il file, cosa succede? 
+The file is deleted if the game is deleted by pressing the button **[ Elimina la partita ]**. 
 
-**A**: Prima di scrivere qualsiasi cosa sul file viene sempre verificata la sua esistenza. 
-Caso in cui si il file non è più presente allora verrà ricreato, inserendo all’interno una notazione che informa l’utente che tutte le vecchie informazioni sono andate perse, successivamente si continua a scrivere nel file tutte le informazioni della partita. 
- 
-**Q**: Il file contiene tutte ma proprio tutte le informazioni? 
+:question: Some questions:
 
-**A**: Ci sono alcune informazioni che non sono presenti nel file ma si ottengono accedendo tramite il pulsante [ Altre info ]. Informazioni mancanti sono: valori dei dadi lanciati, obiettivo assegnato ai giocatori, carte che i giocatori hanno in mano. 
- 
-**Q**: Se viene creato manualmente il file prima della creazione della partita stessa?
+**Q**: What happens if I delete a game and the file has already been deleted?
 
-**A**: Quando la partita viene creata il file creato manualmente viene sovrascritto. 
+**A**: You are notified to the user that the file has probably already been deleted but to avoid problems if it is present, to delete it.
 
-## Altre informazioni reperibili
+**Q**: If you delete a file during a game, what happens?
+
+**A**: Before writing anything on the file, it always verifies its existence.
+The case where the file is no longer present will be re-created, inserting inside a notation that informs the user that all the old information is lost, then you continue to write to the file all the information in the game.
+
+**Q**: Does the file contain all but all the information?
+
+**A**: There are some information that is not in the file but are obtained by accessing the [More Info] button. Missing information is: dice dice, goal assigned to players, cards that players have in hand.
+
+**Q**: Is the file manually created before the game is created?
+
+**A**: When the game is created, the file is overwritten.
+
+## Other information available
 
 
 ![1](https://user-images.githubusercontent.com/22590804/27742567-7d486a8e-5db9-11e7-8122-0ff10b94ba10.jpg)
 
-E’ possibile ottenere delle informazioni addizionali accendo alla schermata mostrata in foto tramite il pulsante **[ Altre info ]** presente nella schermata “Ripercorre una partita”. 
- 
-Tutte le informazioni reperibili, a differenza del file, sono ottenute interrogando direttamente il database. 
+Additional information can be obtained by switching on the screen shown in the picture using the **[ Altre info ]** button on the “Ripercorre una partita” screen.
 
-Tra queste troviamo: 
--	**Giocatori**: selezionata la partita e un giocatore vengono fornite informazioni di vario genere riguardante il giocatore. Ad esempio: tutti i territori conquistati, le carte che ha in mano, le armate totali che ha ancora in gioco ed altre. 
--	**Turni**: selezionata la partita e un turno vengono mostrate tutte le azioni svolte nelle tre fasi (posizionamento, combattimento, spostamento) dal giocatore del turno scelto. 
--	**Generali**: comprende una raccolta generica di informazioni di carattere generale. Ad esempio: numero di partite presenti, numero di tutti i combattimenti svolti di tutte le parte, il territorio preferito dai giocatori ed altri. 
+All information available, unlike the file, is obtained directly by querying the database.
 
-### Informazioni su: Giocatore 
+Among these are:
+-	**Giocatori**: The game is selected and a player is provided with various information about the player. For example: all the conquered territories, the cards in hand, the total army that is still in play and others.
+-	**Turni**: The game is selected and one turn shows all the actions taken in the three phases (positioning, fighting, moving) from the player of the chosen turn.
+-	**Generali**: Includes a generic collection of general information. For example: the number of matches present, the number of all the fights of all parts, the territory preferred by the players and others.
+
+### About: Player
 
 ![2](https://user-images.githubusercontent.com/22590804/27742568-7d52ba20-5db9-11e7-8ec5-79d233ccea2d.jpg)
 
-La schermata sulle informazioni del giocatore può essere divisa in due parti. 
-La parte sinistra (che includono le scritte “Passo 1”, “Passo 2”) dove viene richiesta l’interazione dell’utente e la parte destra dove verranno mostrate tutte le informazioni. 
- 
-Analizzando la parte sinistra bisognerà partite dal “Passo 1” e specificare il nome della partita da cui reperire le informazioni. Una volta scelta la partita, essa andrà scritta nel campo apposito sotto la scritta “Inserisci il nome della partita”. 
-Una volta fatto bisognerà premere il pulsante **[ Mostra i giocatori ]**. 
- 
-Si passerà quindi al “Passo 2” dove nel riquadro in basso saranno presenti i nickname di tutti i giocatori della partita scelta. 
+The player information screen can be divided into two parts.
+The left part (which includes the "Passo 1/Step 1", "Passo 2/Step 2") where the interaction of the user is requested and the right part where all the information will be displayed.
+
+Analyzing the left side you will need to start from "Step 1" and specify the name of the game from which to retrieve the information. Once the game has been selected, it will be written in the field under the entry "Enter the name of the match".
+Once done, you must press the **[ Mostra i giocatori ]** button.
+
+You will then go to "Step 2" where in the box at the bottom will be the nicknames of all the players of the chosen game.
 
 ![3](https://user-images.githubusercontent.com/22590804/27742570-7d581448-5db9-11e7-9f30-db166a05b507.jpg)
 
-Bisognerà quindi scegliere il nickname di un giocatore e inserirlo nel campo sotto la scritta “Inserisci il nome del giocatore”. 
- 
-Per ottenere le informazioni basterà premere il pulsante **[ Mostra info ]**. Invece se si vuole cambiare la partita per ottenere informazioni su altri giocatori bisognerà premere il pulsante **[ Cambia partita ]** e ripetere il procedimento partendo dal “Passo 1”. 
- 
-Una volta premuto il pulsante **[ Mostra info ]** si abiliteranno tutti i campi nella parte destra della schermata, come mostrato dalla figura in basso. 
+You will then need to select a player's nickname and place it in the field below the wording “Inserisci il nome del giocatore”. 
+
+To get the information, just hit the **[ Mostra info ]** button. Instead, if you want to change the game to get information on other players, you need to press the **[ Cambia partita ]** button and repeat the procedure starting from "Step 1".
+
+Once the **[ Mostra info ]** button is pressed, all the fields on the right side of the screen will be enabled, as shown in the figure below.
 
 ![4](https://user-images.githubusercontent.com/22590804/27742569-7d562930-5db9-11e7-9206-058fc349a430.jpg)
 
-Tra i campi presenti troviamo: 
--	**Nickname**: nome del giocatore selezionato. 
--	Colore: colore scelto del giocatore. 
--	**ID conferito**: valore numerico che è stato attribuito dal database al giocatore. 
--	**N° armate in gioco**: numero di armate che il giocatore ha in tutti i suoi territori. 
--	**Obiettivo**: obiettivo assegnatogli. 
--	**Carte che ha in mano**: simbolo delle carte che il giocatore può usare. 
-(per comodità i simboli sono mostrati nella loro interezza). 
--	**N° combattimenti fatti**: numero dei combattimenti che il giocatore ha effettuato nel corso della partita. 
--	**Quante volte ha tirato il dado**: numero di quante volte, nel corso della partita, il giocatore ha lanciato i dadi. 
--	**N° territori conquistati**: numero dei territori che è riuscito a conquistare distruggendo le armate nemiche. 
--	**Combattimenti effettuati**: vengono mostrati in coppia il territorio da cui è stato fatto partire l’attacco e il territorio attaccato. 
--	**Territori conquistati**: nome di tutti i territori conquistati. 
--	**Territori ordinati in base al numero di armate**: vengono elencati tutti i territori appartenenti al giocatore dando priorità ai territori con più carri. 
--	**Giudizio finale**: in base ad alcuni parametri viene generato un giudizio per dare eventuali consigli al giocatore o incoraggiarlo a raggiungere il suo obiettivo. 
+Among the fields present we find:
+-	**Nickname**: Name of the selected player.
+-	**Colore**: Player's chosen color.
+-	**ID conferito**: The numeric value that has been attributed from the database to the player.
+-	**N° armate in gioco**: The number of armies that the player has in all his territories.
+-	**Obiettivo**: Objective assigned to it.
+-	**Carte che ha in mano**: Card symbol that the player can use.
+(For convenience the symbols are shown in their entirety).
+-	**N° combattimenti fatti**: The number of fights that the player did during the match.
+-	**Quante volte ha tirato il dado**: How many times, during the game, the player rolled the dice.
+-	**N° territori conquistati**: Number of territories that managed to conquer destroying enemy armies.
+-	**Combattimenti effettuati**: The territory from which the attack was launched and the attacked territory are shown in pairs.
+-	**Territori conquistati**: Name of all the territories conquered.
+-	**Territori ordinati in base al numero di armate**: All the territories belonging to the player are listed, giving priority to the territories with several wagons.
+-	**Giudizio finale**: Based on certain parameters, a judgment is made to give any advice to the player or to encourage him to reach his goal.
 
 
-### Informazioni su: Turno  
+### About: Turn
 
 ![5](https://user-images.githubusercontent.com/22590804/27742571-7d693534-5db9-11e7-94da-1ad71bb3dba5.jpg)
 
-Come già spiegato anche questa schermata può essere divisa in due parti. 
- 
-L’utente dovrà scegliere e scrivere il nome della partita al “Passo 1” e premere sul bottone **[ Mostra i turni ]**. 
-Successivamente al “Passo 2” verranno mostrati tutti i turni che si sono svolti durante il corso della partita con i relativi nickname dei giocatori associati ad esso. 
- 
-La figura in basso mostra un esempio. 
+As already explained, this screen can be divided into two parts.
+
+The user must choose and write the name of the match to "Step 1" and press the button **[ Mostra i turni ]**. 
+After "Step 2", all the rounds that took place during the course of the match will be shown with the related player nicknames associated with it.
+ 
+The figure below shows an example.
 
 ![6](https://user-images.githubusercontent.com/22590804/27742572-7d713c16-5db9-11e7-894a-8bc4197f04f3.jpg)
 
-Una volta scelto il turno bisognerà scrivere il valore numerico nel campo sotto la scritta “Inserisci il numero del turno”. 
- 
-Premendo su **[ Mostra info ]** verranno visualizzate tutte le informazioni nella parte destra della schermata. Un esempio è riportato nella pagina successiva. 
- 
-Invece se si vuole cambiare partita per ottenere informazioni su altri turni di gioco si dovrà premere **[ Cambia partita ]**. 
- 
+Once you have chosen the turn you will have to enter the numeric value in the field below “Inserisci il numero del turno”. 
+
+Pressing **[ Mostra info ]** will display all the information on the right side of the screen. An example is shown on the next page.
+
+Instead, if you want to change the game to get information on other game rounds you will have to press **[ Cambia partita ]**. 
+
 ![7](https://user-images.githubusercontent.com/22590804/27742573-7d75379e-5db9-11e7-811d-112d9d802ea3.jpg)
 
-Tra i campi presenti troviamo: 
--	**N° turno**: numero del turno che è stato scelto 
--	**Giocatore**: nickname del giocatore che ha svolto le azioni nel turno scelto. 
--	**N° di posizionamenti effettuati**: valore numero dei posizionamenti dei carri effettuato dal giocatore in quel turno. 
--	**Somma delle truppe inserite**: se il giocatore effettua più posizionamenti, verranno sommate tutte le truppe che ha inserito. 
--	**Altre informazioni (Posizionamento)**: vengono mostrati i territori, numero di armate, e tipo di posizionamento (preliminare – classico – tramite combinazione carte) che sono stati effettuati. 
--	**N° combattimenti effettuati**: numero dei combattimenti svolti durante il turno. 
--	**Altre informazioni (Combattimento)**: vengono mostrati il territorio d’attacco e il territorio che si difende, tutte le combinazioni di dadi che sono stati lanciati e l’esito del combattimento (se ha portato o meno alla conquista del territorio). 
--	**N° di spostamenti effettuati**: numero degli spostamenti (compreso tra 0 – 1 in quanto lo spostamento è opzionale oppure ne può essere fatto solo uno). 
--	**Altre informazioni (Spostamento)**: viene visualizzato lo spostamento effettuato dando informazioni sul territorio di partenza, territorio d’arrivo e numero di armate spostate. 
+Among the fields present we find:
+-	**N° turno**: The number of the turn that was chosen.
+-	**Giocatore**: Nickname of the player who did the actions in the turn chosen.
+-	**N° di posizionamenti effettuati**: The number of number of wagons placed on the player in that turn.
+-	**Somma delle truppe inserite**: If the player makes multiple placements, all troops will be added.
+-	**Altre informazioni (Posizionamento)**: The territories, the number of armies, and the positioning type (preliminary - classic - by card combination) are shown.
+-	**N° combattimenti effettuati**: Number of fights during the round.
+-	**Altre informazioni (Combattimento)**: Are shown the area of attack and the defending territory, all the combinations of dice that were launched and the outcome of the fight (whether or not it led to the conquest of the territory).
+-	**N° di spostamenti effettuati**: Number of shifts (between 0 and 1 as shifting is optional or can be done only one).
+-	**Altre informazioni (Spostamento)**: The displacement is displayed giving information on the departure territory, arrival territory, and number of armed forces moved.
 
-### Informazioni su: Turno  
+### About: Round
 
 ![8](https://user-images.githubusercontent.com/22590804/27742574-7d7f70ba-5db9-11e7-8b72-b80eef02109d.jpg)
 
-La schermata ***“Generali”*** mostra informazioni a livello generale prendendo in considerazione tutte le partite presenti. 
- 
-Tra i campi presenti troviamo: 
-Numero totale di: mostra la somma di tutte le informazioni di tutte le partite prese insieme. 
- 
--	**Partite presenti**: partite che sono state create. 
--	**Giocatori presenti**: tutti i giocatori. 
--	**Dadi tirati**: numero totale di tutti i dadi che sono stari tirati nel corso delle partite. 
--	**Armate**: tutte le armate presenti in tutti i continenti. 
--	**Turni di gioco**: i turni giocati. 
--	**Combattimenti/Posizionamenti/Spostamenti**: totale di tutte le fasi di gioco effettuate. 
- 
-**Numero totale di inserimenti**: mostra la somma delle informazioni sulla tipologia di inserimenti che ogni giocatore ha effettuato. 
--	**Preliminari**: maggiori informazioni pag. 13. 
--	**Classici/Combinazione carte**: maggiori informazioni pag. 18. 
- 
-Territori: sono presenti informazioni sui territori. 
--	**Territorio preferito dai giocatori**: mostra il territorio che contiene più armate di tutte le partite presenti. 
--	**Territorio più trascurato**: mostra il territorio con il minor numero di armate di tutte le partite. 
--	**Territorio più attaccato**: mostra il territorio che ha subito più attacchi nelle fasi di combattimento. 
- 
-**Altre**: informazioni su carte e obiettivi. 
--	**Combinazione di carte più usata**: mostra la combinazione di carte più usata dai giocatori di tutte le partite. 
--	**L’obiettivo più presente**: mostra l’obiettivo che è stato assegnato maggiormente ai giocatori. 
+The ***“Generali”*** screen shows general information taking into account all the items present.
+
+Among the fields present we find:
+Numero totale di: shows the sum of all the information of all the matches taken together.
+
+-	**Partite presenti**: Matches that were created.
+-	**Giocatori presenti**: All players.
+-	**Dadi tirati**: Total number of dice that are streaked during the matches.
+-	**Armate**: All the armies present on all continents.
+-	**Turni di gioco**: The rounds played.
+-	**Combattimenti/Posizionamenti/Spostamenti**: Total of all the game phases performed.
+
+**Numero totale di inserimenti**: Shows the sum of information about the type of inserts that each player has made.
+-	**Preliminari**: More information above.
+-	**Classici/Combinazione carte**: More information above.
+
+Territori: There are information about the territories.
+-	**Territorio preferito dai giocatori**: Shows the territory that contains more armies than all the items present.
+-	**Territorio più trascurato**: Shows the territory with the smallest number of armies of all matches.
+-	**Territorio più attaccato**: Shows the territory that has suffered more attacks in the fighting phases.
+
+**Altre**: Information about cards and goals.
+-	**Combinazione di carte più usata**: Shows the combination of cards most used by players of all matches.
+-	**L’obiettivo più presente**: 
+Shows the goal that has been assigned to the players.

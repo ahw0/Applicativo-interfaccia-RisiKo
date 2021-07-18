@@ -34,11 +34,11 @@ This is a guide that allows you to use the application with [its](https://github
 
 When the application starts, the login menu is displayed, through which you can perform the following actions:
 
-- **Login**: login with username and password for database that you want to use.
+- **Login**: login with username and password for the database that you want to use.
 - **Opzioni**: specify database access parameters.
 - **Esci**: exit.
 
-If you go to **[Opzioni]** you can make changes on the connection to the database.
+If you go to **[Opzioni]** you can make changes to the connection to the database.
 From here you can make appropriate changes to access the database. Among these are the customization of:
 
 -	**Host**
@@ -46,12 +46,12 @@ From here you can make appropriate changes to access the database. Among these a
 -	**Porta** 
 
 Once you change the information, you can proceed by pressing the appropriate button **[Applica]** to make it effective.
-The case where you want to restore the default access parameters will have to press the **[Ripristina predefiniti]**.
+In the case where you want to restore the default access parameters will have to press the **[Ripristina predefiniti]**.
 
 The default parameters are also written and displayed automatically at each opening of the screen.
-When you finish the customizations, the user will be notified by means of a pop-up containing all the parameters he has edited.
+When you finish the customizations, the user will be notified through a pop-up containing all the parameters he has edited.
 
-Each database access customization field has appropriate controls to avoid entering long strings or characters in fields where only numbers are required.
+Each database access customization field has appropriate controls to avoid entering long strings of characters in fields where only numbers are required.
 
 You can go back to the login menu. Access by right credentials leads the user to the application's main screen, opposite case will be notified of a login problem.
 
@@ -66,7 +66,7 @@ Features include:
 - **Download**: offers the ability to download files containing the database to be able to use the application and a test population.
 - **Esci**: exit.
 
-The user can select by pressing the appropriate button to access one of the present mode and its features.
+The user can select by pressing the appropriate button to access one of the present modes and its features.
 
 ## Sections
 ### New match
@@ -74,7 +74,7 @@ The user can select by pressing the appropriate button to access one of the pres
 When creating a game, you are asked to specify various parameters such as:
 
 - **Nome partita**: name to be assigned to the match. Used subsequently in most interactions where the user has to specify the reference game (eg, resuming an old match, getting player information, and more).
-- **N° Giocatori**: selectable with the drop down menu allows you to specify the number of players who want to participate in the game.
+- **N° Giocatori**: selectable with the drop-down menu allows you to specify the number of players who want to participate in the game.
 - **Nome Giocatore**: name or nickname of the players in the match.
 - **Colore**: the color chosen by the player with whom he intends to play.
 Depending on the number of players selected (minimum three players) will be made available or not the fields for entering such information.
@@ -89,10 +89,10 @@ Among the controls present, the game is not created when:
 - There is already a match with the same name chosen by the user.
 - There are two or more players with the same nickname (management is case sensitive, meaning a player "Pippo" is different from the player
 "pippo").
-- There are two or more players with the same color. - Empty fields are present.
+- There are two or more players of the same color. - Empty fields are present.
 
 
-In such cases, the user is informed of a mistake made with a suitable notice.
+In such cases, the user is informed of a mistake made with suitable notice.
 
 
 ### Resume Match
@@ -123,13 +123,13 @@ When a game is played back, in addition to getting all the information in the bi
 
 ### Download
 
-Area where user can download files and scripts:
+The area where user can download files and scripts:
 -	**Database**: file to proceed with creating the database according to the rules of the game RisiKo!
 -	**Popolamento**: file that shows a popup example that you can run in the database.
 
 Each game in the database is registered by a numeric code, ie integers ranging from 1 to N. For example, the "MulinoBianco" game has a code of 4, while the "Frollino" game has a code of 5.
 If you download the popup file, the value for the associated match is equal to 1. This means that if a match with that associated value is already present, the popup script will not run.
-The choice of value 1 is derived from the motivation that the popup script is executed when the database is "naked and raw", just as a sample file used before proceeding to any other insertion through database and / or application.
+The choice of value 1 is derived from the motivation that the popup script is executed when the database is "naked and raw", just as a sample file used before proceeding to any other insertion through the database and/or application.
 
 
 # Play a game
@@ -141,7 +141,7 @@ The phase involves the insertion of a predetermined number of armies (shown on t
 
 In the top part you can view information such as:
 -	**Tocca a**: shows the nickname of the player to play the action, in this case the insertion of armies. - Il tuo ID: identifier associated with the player.
--	**Partita N°**: identification associated to match/number of match.
+-	**Partita N°**: identification associated to match/number of matches.
 -	**Nome Partita**: name that was given by the user to the game.
 -	**N° armate max da inserire**: are the maximum number of armies that the player can enter in one or more territories.
 -	**N° armate totali**: are the number of armies that are still to be entered.
@@ -157,12 +157,12 @@ The information about: **[Il tuo ID]**, **[Partita N]** and **[N° turno]** can 
 The last part, on the right, followed by the word **[Posizionamento]** consists of three parts:
 -	**Nome territorio**: enter the name of the territory where you want to add the armed forces.
 -	**N° armate**: the numerical value of the armed forces that you want to enter in the territory previously expressed.
--	**Abilita territorio**: if player decides to insert armies into another territory, he can enable that entry by ticking the corresponding box.
+-	**Abilita territorio**: if the player decides to insert armies into another territory, he can enable that entry by ticking the corresponding box.
 
 ***More details on abilita territorio***: as long as the armies are not finished, as per regulation, each player must have at most 3 armies in each territory.
 For strategic reasons, a player can, for example, place 2 armies on territory A and 1 on territory B.
 To make such placements, the player will write A in the first field under "Nome territorio" and the value 2 in the field next, then check the second (or third) checkbox to write the B territory and the value 1.
-Up to three territories can be empowered as maximum three armies can be placed in three territories (1 army on each territory).
+Up to three territories can be empowered as maximum of three armies can be placed in three territories (1 army on each territory).
 
 In each field, copy-paste information is forbidden to prevent copying of some special characters that may cause subsequent insertion into the database. Additionally, appropriate checks verify that the name of the territory is correct and that it belongs to the player. Of course we do not want to make enemies stronger by giving them armies!
 
@@ -171,22 +171,22 @@ At least one territory chosen and the number of armies to be entered can be done
 The preliminary phase lasts until all the players have armed to add. Once each player has finished the number of armies he gets into the game's life.
 
 It always starts from turn number 1, actually there is also turn 0.
-This is used by database to understand that players who want to participate in the game are over and that you can go to the next stage of preparation.
+This is used by the database to understand that players who want to participate in the game are over and that you can go to the next stage of preparation.
 At this stage, the database randomizes the territories and assigns them to the players (placing 1 armed on each territory), assigns the goals and sets the round that the players have to do (this is not to say the id number player 1 is the First to start).
 
 ## Positioning phase
 
 When the preliminary phase is over, the real phase of the game begins. It is divided into three parts:
 
--	**Posizionamento**: the player has the right every turn to enter N armed (calculated on the basis of his territories or a combination of cards) in his territories.
--	**Combattimento**: you can decide whether or not to attack the enemy territories with your own armies.
+-	**Posizionamento**: the player has the right every turn to enter N armed (calculated based on his territories or a combination of cards) in his territories.
+-	**Combattimento**: you can decide whether or not to attack the enemy territories with your armies.
 -	**Spostamento**: you can decide whether or not to move a certain number of armies from one territory to another.
 The positioning screen contains some of the information already seen.
 
 Additionally:
 -	**N° armate max che si possono inserire**: numeric value that expresses the exact number of armies that the player can enter in one or more of his territories.
 -	**Tipo inserimento**: the player can choose how to get the number of armies by specifying the type of insertion. It is divided into:
-     * **Inserimento classico**: the number of armies is calculated by how many the territories occupied by the player divided by three. Additionally, if the player occupies all the territories of one or more continents, he is entitled to an additional number of armies.
+     * **Inserimento classico**: the number of armies is calculated by how many the territories are occupied by the player divided by three. Additionally, if the player occupies all the territories of one or more continents, he is entitled to an additional number of armies.
      * **Inserimento combinazione carte**: includes the number of armies calculated by the additional classical addition of additional armaments given by the card combination used by the player.
      ***Note: on the number of armies read the rules of the game.***
 -	**Le tue carte**: cards that have in hand the player. For convenience, they are expressed in a single letter (C – Cavalleria, F – Fante, A – Artigliere, J – Jolly).  
@@ -206,7 +206,7 @@ A gambling card consists of two information: territory and symbol. The territory
 So what if the player has in his hand cards like: F - C - A - A, where only one of the As is also associated with a territory that he owns?
 Since the combination involves F - C - A, which of the two A is taken to form such a combination?
 The most obvious answer is to consider A that also includes the territory owned by the player, so that they have an even greater number of armies to insert.
-And it is also the answer given by the database. In fact, the database begins to search for the best A card, which also includes a territory owned by the player.
+And it is also the answer given by the database. The database begins to search for the best A card, which also includes a territory owned by the player.
 So in this case, two A will be selected between two.
 
 
@@ -221,7 +221,7 @@ Once you have entered all your armies, you go to the next step.
 
 ## Combat phase
 
-Both combat phase and the next phase of displacement fall into the optional stages. The player is free to choose not to make any fighting or move.
+Both the combat phase and the next phase of displacement fall into the optional stages. The player is free to choose not to make any fighting or move.
 
 At this stage, the button is located at the bottom of the center **[Finisci i combattimenti]**.
 This button can be used for:
@@ -235,7 +235,7 @@ The turn player decides to make a fight. The territory from which to start the a
 In the box under “Nome territorio attaccante”.
 
 
-As the player does not know which enemy territories are bordering on the attack territory, he decides to press the button **[Mostra confini nemici]** to obtain the information on:
+As the player does not know which enemy territories are bordering on the attacking territory, he decides to press the button **[Mostra confini nemici]** to obtain the information on:
 -	**Territori nemici confinanti**: the names, if present, of all territories not owned by the player bordering the territory he has expressed in the “Nome territorio attaccante” field.
 -	**Carri sul territorio**: enemy tanks that are present on the territory.
 -	**Colore**: color of the enemy, useful for strategic purposes. 
@@ -250,7 +250,7 @@ As you can see from the figure under the button **[Prepara all’attacco]**, the
 -	**ID difensore**: the id of the defender who has been assigned.
 
 To launch the dice, first specify the number of dice to be fired. This can be done using the drop-down menu for both the attacking player and the defensive player (see below). The maximum number of dice that can be launched by both players is 3.
-Obviously, the number of dice to use depends on both the strategies used by the players and the number of armies in both territories. In fact, each nut is associated with an armor.
+Obviously, the number of dice to use depends on both the strategies used by the players and the number of armies in both territories. Each nut is associated with armor.
 If the attacking player has 2 armies he can not cast 3 dice as he can not throw 2 (remember that according to the rules of the game on the attacking territory there must always be 1 armed guard, so having 2 armies will not be able to launch a 2 Because in case of defeat the territory would be lost, in violation of the regulation).
 
 
@@ -282,7 +282,7 @@ A positive case is notified to the user that the attacking player has won the ga
 When the fighting is over, you decide to go to the next step by pressing the button **[Finisci i combattimenti]**. 
 
 
-The combat phase is the one that has multiple controls and calls to the database compared to all the other application screens. Among the many controls you go to check for example: if the player has the territory from which to start the attack, if the attack territory is confined to the one to attack, if both territories are not the same player, if it is present More than 1 armed in the area of attack and many others. The same applies to the launch of the dice, as well as the call to appropriate database functions to verify the outcome of the fight, or to verify the player's victory or the defeat player defeat.
+The combat phase is the one that has multiple controls and calls to the database compared to all the other application screens. Among the many controls you go to check for example: if the player has the territory from which to start the attack, if the attacking territory is confined to the one to attack, if both territories are not the same player, if it is present More than 1 armed in the area of attack and many others. The same applies to the launch of the dice, as well as the call to appropriate database functions to verify the outcome of the fight, or to verify the player's victory or the defeat player defeat.
 
 
 
@@ -292,7 +292,7 @@ It came to the last stage of the game that ends the player's turn, the move.
 As in the combat phase, you can still choose whether to make an armed move or not to do so by just pressing the **[Non effettuare nessuno spostamento]** button.
 
 
-In case you want to move a number of armies from one territory to another, you must enter the name of the starting territory in the box under "Nome territorio di partenza".
+In case you want to move several armies from one territory to another, you must enter the name of the starting territory in the box under "Nome territorio di partenza".
 
 Since a move can only take place between adjacent territories belonging to the same player in the current round, pressing the **[Mostra confini]** button will show, if present, the neighboring territories belonging to the player where the armies can be sent. In this case, Venezuela's territory has a neighboring territory belonging to the player himself in Brazil.
 
@@ -324,16 +324,16 @@ The information that is shown in the big box below the text
 File management is done as follows:
 
 The file is generated by creating the game by naming it and adding the text ***"_ log.txt"*** as an identifier.
-Normally, when a game is created, it is not possible to have a file with the name of the game; This is because it would have in the database a match with the same name as the one you want to create, thus leading to the non-creation of the game and therefore of the new file. If a file that has the same name as the game you are creating and that name is not present in the database, the file is overwritten.
+Normally, when a game is created, it is not possible to have a file with the name of the game; This is because it would have in the database a match with the same name as the one you want to create, thus leading to the non-creation of the game and therefore of the new file. If a file has the same name as the game you are creating and that name is not present in the database, the file is overwritten.
  
-During the course of a game, all relevant information is taken to reconstruct it step by step.
+During a game, all relevant information is taken to reconstruct it step by step.
 All information is converted to a string and sent to a special function that "opens" the file, inserts the string at the end and
 "Closes."
 
 The set of all strings allows you to get a single file where there are information about:
 -	Information about creating the game. Includes date, number of players present, nickname and color chosen.
 -	All the placements in the stages: preliminary, positioning, fighting and moving. It includes territories, number of armed forces, actions taken
--	All the fights done. Includes the number of launched dice, the outcome of the combat, missed armies.
+-	All the fights are done. Includes the number of launched dice, the outcome of the combat, missed armies.
 -	Learn more about: moments when the game was paused, resumed the game, losing players, winning player.
 
 The file is deleted if the game is deleted by pressing the button **[Elimina la partita]**. 
@@ -379,7 +379,7 @@ The left part (which includes the "Passo 1/Step 1", "Passo 2/Step 2") where the 
 Analyzing the left side you will need to start from "Step 1" and specify the name of the game from which to retrieve the information. Once the game has been selected, it will be written in the field under the entry "Enter the name of the match".
 Once done, you must press the ** Mostra i giocatori]** button.
 
-You will then go to "Step 2" where in the box at the bottom will be the nicknames of all the players of the chosen game.
+You will then go to "Step 2" wherein the box at the bottom will be the nicknames of all the players of the chosen game.
 
 
 You will then need to select a player's nickname and place it in the field below the wording “Inserisci il nome del giocatore”. 
@@ -426,7 +426,7 @@ Instead, if you want to change the game to get information on other game rounds 
 Among the fields present we find:
 -	**N° turno**: the number of the turn that was chosen.
 -	**Giocatore**: nickname of the player who did the actions in the turn chosen.
--	**N° di posizionamenti effettuati**: the number of number of wagons placed on the player in that turn.
+-	**N° di posizionamenti effettuati**: the number of wagons placed on the player in that turn.
 -	**Somma delle truppe inserite**: if the player makes multiple placements, all troops will be added.
 -	**Altre informazioni (Posizionamento)**: the territories, the number of armies, and the positioning type (preliminary - classic - by card combination) are shown.
 -	**N° combattimenti effettuati**: number of fights during the round.
